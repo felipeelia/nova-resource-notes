@@ -14,9 +14,15 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/alexstewartja/laravel-model-notes"
+        }
+    ],
     "require": {
-        "php": ">=7.1.0",
-        "digitalcloud/laravel-model-notes": ">=1.1"
+        "php": ">=7.1.0 | ^8.0",
+        "digitalcloud/laravel-model-notes": "dev-refactor-upgrade"
     },
     "autoload": {
         "psr-4": {
