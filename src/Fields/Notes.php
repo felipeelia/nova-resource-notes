@@ -40,5 +40,23 @@ class Notes extends Field implements RelatableField {
             'singularLabel' => $this->singularLabel ?? Str::singular($this->name),
         ], $this->meta);
     }
+    /**
+     * Get the relationship name.
+     *
+     * @return string
+     */
+    public function relationshipName()
+    {
+        return $this->attribute;
+    }
 
+    /**
+     * Get the relationship type.
+     *
+     * @return string
+     */
+    public function relationshipType()
+    {
+        return 'hasMany';
+    }
 }
